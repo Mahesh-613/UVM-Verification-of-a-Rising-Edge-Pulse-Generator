@@ -1,0 +1,555 @@
+UVM_INFO /home/Tools/synopsys/tool/install/vcs/W-2024.09-SP2//etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test pulse_test...
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'pulse_dump.fsdb'
+*Verdi* : Begin traversing the scope (pulse_top), layer (0).
+*Verdi* : End of traversing.
+UVM_INFO pulse_driver.sv(23) @ 5000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @605                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    0                              
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 5000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @641 
+  rst        integral    1     'h1  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 5000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 15000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @637                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    5000                           
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 15000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @655 
+  rst        integral    1     'h1  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 15000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 25000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @651                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    15000                          
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 25000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @669 
+  rst        integral    1     'h1  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 25000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 35000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @665                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    25000                          
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 35000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @683 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 35000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 45000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @679                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    35000                          
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 45000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @697 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 45000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 55000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @693                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    45000                          
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 55000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @711 
+  rst        integral    1     'h1  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 55000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 65000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @707                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    55000                          
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 65000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @725 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 65000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 75000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @721                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    65000                          
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 75000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @739 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 75000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 85000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @735                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    75000                          
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 85000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @753 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 85000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 95000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @749                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    85000                          
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 95000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @767 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h1  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 95000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=1
+UVM_INFO pulse_driver.sv(23) @ 105000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @763                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    95000                          
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 105000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @781 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 105000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 115000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @777                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    105000                         
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 115000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @795 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h1  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 115000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=1
+UVM_INFO pulse_driver.sv(23) @ 125000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @791                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    115000                         
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 125000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @809 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 125000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 135000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @805                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    125000                         
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 135000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @823 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 135000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 145000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @819                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    135000                         
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 145000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @837 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h1  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 145000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=1
+UVM_INFO pulse_driver.sv(23) @ 155000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @833                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    145000                         
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 155000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @851 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 155000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 165000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @847                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    155000                         
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 165000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @865 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 165000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 175000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @861                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    165000                         
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 175000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @879 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 175000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 185000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @875                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h1                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    175000                         
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 185000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @893 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 185000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=0
+UVM_INFO pulse_driver.sv(23) @ 195000: uvm_test_top.env.agent.driver [DRIVER] Driver transaction:
+--------------------------------------------------------------------------------
+Name                           Type        Size  Value                          
+--------------------------------------------------------------------------------
+req                            pulse_item  -     @889                           
+  rst                          integral    1     'h0                            
+  signal_in                    integral    1     'h0                            
+  pulse_out                    integral    1     'h0                            
+  begin_time                   time        64    185000                         
+  depth                        int         32    'd2                            
+  parent sequence (name)       string      3     seq                            
+  parent sequence (full name)  string      31    uvm_test_top.env.agent.seqr.seq
+  sequencer                    string      27    uvm_test_top.env.agent.seqr    
+--------------------------------------------------------------------------------
+UVM_INFO pulse_monitor.sv(26) @ 195000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @905 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h1  
+  pulse_out  integral    1     'h0  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 195000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=1 pulse_out=0
+UVM_INFO pulse_monitor.sv(26) @ 205000: uvm_test_top.env.agent.monitor [MONITOR] Received transaction:
+------------------------------------
+Name         Type        Size  Value
+------------------------------------
+item         pulse_item  -     @913 
+  rst        integral    1     'h0  
+  signal_in  integral    1     'h0  
+  pulse_out  integral    1     'h1  
+------------------------------------
+UVM_INFO pulse_scoreboard.sv(33) @ 205000: uvm_test_top.env.scoreboard [SCOREBOARD] PASS : signal_in=0 pulse_out=1
+UVM_INFO /home/Tools/synopsys/tool/install/vcs/W-2024.09-SP2//etc/uvm-1.2/base/uvm_objection.svh(1276) @ 215000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /home/Tools/synopsys/tool/install/vcs/W-2024.09-SP2//etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 215000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /home/Tools/synopsys/tool/install/vcs/W-2024.09-SP2//etc/uvm-1.2/base/uvm_report_server.svh(904) @ 215000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   66
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRIVER]    20
+[MONITOR]    21
+[RNTST]     1
+[SCOREBOARD]    21
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+$finish called from file "/home/Tools/synopsys/tool/install/vcs/W-2024.09-SP2//etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time               215000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 215000 ps
+CPU Time:      0.990 seconds;       Data structure size:   0.6Mb
+Sat Aug  8 12:09:18 2026
