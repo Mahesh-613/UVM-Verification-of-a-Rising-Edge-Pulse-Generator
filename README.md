@@ -44,7 +44,7 @@ The design successfully detected rising edges and generated the synchronized sin
 *Caption: Figure  - Simulation waveform verifying the 0-to-1 input transition and the corresponding single-cycle output pulse.*
 
 ### TestCase Verification
-![Output Waveform for different test cases](images/Screenshot 2026-08-18 182651.png)
+![Output Waveform for different test cases](images/Screenshot-2026-08-18-182651.png)
 *Caption: Figure  - Simulation waveform verifying reset, all high input signal and toggling input signal.*
 
 ### 🔬 Synthesis & Static Timing Analysis
