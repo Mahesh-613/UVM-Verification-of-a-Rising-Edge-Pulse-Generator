@@ -29,8 +29,8 @@ The architecture is inherently synchronous, driven by a common system clock. The
 * **Equation:** `pulse_out = current_state & ~previous_state`
 * Generates a precise, glitch-free one-clock-cycle pulse exactly when the rising edge occurs.
 
-![RTL Schematic](images/pulse_gen_schematic.png)
-*Caption: Figure 1 - RTL schematic detailing the synchronization Flip-Flops and logic gates used for edge detection.*
+![RTL Schematic](images/synth_design.png)
+*Caption: Figure  - Synthesized RTL.*
 
 ## 🛠️ Verification
 The design was robustly verified using a SystemVerilog/UVM testbench environment, simulated with Synopsys VCS and Verdi.
@@ -38,15 +38,14 @@ The design was robustly verified using a SystemVerilog/UVM testbench environment
 * **Components:** The testbench includes a stimulus generator capable of driving various input signal patterns, including rapid toggling, long holding delays, and single-cycle spikes.
 * **Scoreboard Logic:** The Scoreboard continuously monitors the input transitions and validates that `pulse_out` is asserted for exactly one clock cycle immediately following a valid 0-to-1 transition. Mismatches are flagged and logged in the terminal output.
 
-![Verification Terminal Output](images/verification_output.png)
-*Caption: Figure 2 - Scoreboard terminal output validating the generated pulses against expected signal transitions.*
+For Scoreboard Terminal output open images/project_verdi1.png in any text editor or notepad
 
 ## 📊 Output
 The design successfully detected rising edges and generated the synchronized single-cycle pulses as intended.
 
 ### 🌊 Simulation Waveforms
-![Pulse Generator Waveform](images/pulse_gen_waveform.png)
-*Caption: Figure 3 - Simulation waveform verifying the 0-to-1 input transition and the corresponding single-cycle output pulse.*
+![Pulse Generator Waveform](images/project_verdi1.png)
+*Caption: Figure  - Simulation waveform verifying the 0-to-1 input transition and the corresponding single-cycle output pulse.*
 
 ### 🔬 Synthesis & Static Timing Analysis
 The ASIC synthesis workflow utilized the Synopsys Design Compiler with a standard cell library.
@@ -54,8 +53,9 @@ The ASIC synthesis workflow utilized the Synopsys Design Compiler with a standar
 * **Timing Closure:** Achieved setup timing closure with zero violating paths, ensuring reliable high-frequency operation.
 * **Cell Area & Power:** The footprint is minimal, utilizing only a few standard sequential and combinational cells, making it highly optimized for low-power operation.
 
-![Synthesis Report](images/pulse_gen_synth_report.png)
-*Caption: Figure 4 - Synopsys Design Compiler reports detailing cell area and power dissipation.*
+![Synthesis Report](images/qor_rpt_1.png)
+![Synthesis Report](images/qor_rpt_2.png)
+*Caption: Figure - QOR Report obtained from Synopsys Design Compiler.*
 
 ## 🎯 Conclusion
 The project successfully completed the RTL design, verification, and ASIC logic synthesis of a Rising Edge Pulse Generator. The implementation ensures robust transition detection suitable for high-speed synchronous digital systems.
