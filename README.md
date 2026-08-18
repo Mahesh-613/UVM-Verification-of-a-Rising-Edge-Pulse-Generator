@@ -43,6 +43,10 @@ The design successfully detected rising edges and generated the synchronized sin
 ![Pulse Generator Waveform](images/project_verdi1.png)
 *Caption: Figure  - Simulation waveform verifying the 0-to-1 input transition and the corresponding single-cycle output pulse.*
 
+### TestCase Verification
+![Output Waveform for different test cases](images/Screenshot 2026-08-18 182651.png)
+*Caption: Figure  - Simulation waveform verifying reset, all high input signal and toggling input signal.*
+
 ### 🔬 Synthesis & Static Timing Analysis
 The ASIC synthesis workflow utilized the Synopsys Design Compiler with a standard cell library.
 
