@@ -19,11 +19,7 @@ A Rising Edge Pulse Generator (also known as an Edge Detector) is a fundamental 
 ## ⚙️ Working
 The architecture is inherently synchronous, driven by a common system clock. The design is cleanly divided into the following functional blocks:
 
-### 1. Input Synchronizer (Optional but Recommended) ⏱️
-* Acts as a safeguard against metastability when dealing with asynchronous input signals.
-* Utilizes a standard 2-stage D-Flip-Flop synchronizer to align the external signal to the local clock domain before edge detection.
-
-### 2. Edge Detection Logic 🔍
+### Edge Detection Logic 🔍
 * Employs a D-Flip-Flop to store the state of the synchronized input from the previous clock cycle.
 * Uses combinatorial logic to evaluate the transition.
 * **Equation:** `pulse_out = current_state & ~previous_state`
